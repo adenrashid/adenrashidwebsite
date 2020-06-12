@@ -1,0 +1,180 @@
+body {
+margin: 0;
+background-color: rgba(229, 229, 229, 0.1);
+font-family: "Lato", sans-serif; 
+}
+
+.container {
+    position: fixed;
+    top: 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.left-side {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    background-color: rgba(229, 229, 229);
+    z-index: 9998;
+    width: 100%;
+}
+
+.nav-wrapper > .left-side > div {
+    display: flex;
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-left-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-left-wrapper a {
+    color: rgb(19,22,24);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-left-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-left-wrapper a:hover {
+    color: black;
+}
+
+.right-wrapper {
+    color: rgb(123, 125, 125);
+    position: absolute; 
+    margin-left: 1150px;
+    margin-top: -12px;
+    z-index: 9999;
+    text-align: right;
+}
+
+.aden-photo {
+    opacity: 0.9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 10%;
+}
+
+.heading-intro {
+text-align: center;
+opacity: 0.8;
+color: rgb(19,22,24);
+}
+
+.heading-bio {
+    text-align: center;
+    color: rgb(19,22,24);
+    opacity: 0.7;
+}
+
+.fa {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #3B5998;
+    color: white;
+    margin-left: 545px;
+  }
+
+  .fa-github {
+      background: #24292e;
+      color: white;
+  }
+
+  .fa-instagram {
+      background: #405DE6;
+      color: white; 
+  }
+
+.about-me h3 {
+    text-align: center; 
+    margin-top: 70px;
+    color: rgb(19,22,24);
+    opacity: 0.8;
+    font-size: 1.5rem;
+}
+
+.about-me-bio {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    opacity: 0.7;
+}
+
+.contact h3{
+    text-align: center;
+    color: rgb(19,22,24);
+    opacity: 0.8;
+    font-size: 1.5rem;
+}
+
+.projects h3{
+    text-align: center;
+    color: rgb(19,22,24);
+    opacity: 0.8;
+    font-size: 1.5rem;
+}
+
+.contactinfo {
+    text-align: center;
+    background-color: rgba(229, 229, 229);
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.paracontact {
+    opacity: 0.7;
+}
+
+.footer-1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: rgb(123, 125, 125);
+}
+
+.footer-2 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(123, 125, 125);
+    margin-bottom: 40px;
+}
+
+.downloadicon {
+    opacity: 0.8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
