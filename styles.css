@@ -55,8 +55,8 @@ font-family: "Lato", sans-serif;
 
 .right-wrapper {
     color: rgb(123, 125, 125);
-    position: absolute; 
-    margin-left: 1150px;
+    right: 25px;
+    position: fixed; 
     margin-top: -12px;
     z-index: 9999;
     text-align: right;
@@ -69,6 +69,11 @@ font-family: "Lato", sans-serif;
     margin-right: auto;
     margin-top: 60px;
     border-radius: 10%;
+}
+
+.social-media {
+    width: 277px;
+    margin: 0 auto;
 }
 
 .heading-intro {
@@ -99,7 +104,6 @@ color: rgb(19,22,24);
   .fa-linkedin {
     background: #3B5998;
     color: white;
-    margin-left: 545px;
   }
 
   .fa-github {
@@ -114,22 +118,34 @@ color: rgb(19,22,24);
 
 .about-me h3 {
     text-align: center; 
-    margin-top: 70px;
+    margin-top: 50px;
     color: rgb(19,22,24);
     opacity: 0.8;
     font-size: 1.5rem;
 }
 
+#underline {
+    border-bottom: 1px solid rgb(19,22,24);
+    padding-bottom: 10px;
+}
+
 .about-me-bio {
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     opacity: 0.7;
+    font-size: 17px;
+}
+
+.hi {
+    text-align: center;
 }
 
 .contact h3{
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
     color: rgb(19,22,24);
     opacity: 0.8;
     font-size: 1.5rem;
@@ -140,6 +156,71 @@ color: rgb(19,22,24);
     color: rgb(19,22,24);
     opacity: 0.8;
     font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(123, 125, 125);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.grid-item-title {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(19,22,24);
+    opacity: 0.8;
+}
+
+.grid-item-description {
+    font-size: 17px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.grid-imgs {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.source-code-button {
+    font-size: 17px;
+    background-color: rgb(248,248,248);
+    border-radius: 10%;
+    padding: 10px;
+    position: relative; top:20px; bottom:100px;
+    border: 1.5px solid;
+}
+
+a.source-code-button {
+    text-decoration: none;
+    color: rgba(19,22,24,0.8);
+    transition-property: background-color;
+    transition-duration: 1s;
+    }
+    
+a.source-code-button:visited {
+    text-decoration: none;
+    color: rgba(19,22,24,0.8);
+}
+
+a.source-code-button:hover {
+    background-color: rgba(36, 41, 46, 0.7);
+    color: white;
+    border-color: white;
 }
 
 .contactinfo {
@@ -152,11 +233,12 @@ color: rgb(19,22,24);
 
 .paracontact {
     opacity: 0.7;
+    font-size: 16px;
 }
 
 .footer-1 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 70px;
     font-size: 12px;
     color: rgb(123, 125, 125);
 }
@@ -166,7 +248,7 @@ color: rgb(19,22,24);
     font-size: 12px;
     margin-top: 5px;
     color: rgb(123, 125, 125);
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .downloadicon {
@@ -177,4 +259,31 @@ color: rgb(19,22,24);
     height: 30px;
     margin-top: 20px;
     border-radius: 10%;
+}
+
+@media (max-width: 700px) {
+    .right-wrapper {
+        display: none;
+    }
+    .nav-wrapper {
+        font-size: 15px;
+    }
+    .about-me-bio {
+        margin: 50px 50px 50px 50px;
+        text-align: justify;
+    }
+    #underline {
+        border-bottom: 0;
+        padding-bottom: 10px;
+        text-decoration: underline;
+    }
+    .grid-item-description {
+        text-align: left;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+      }
+    .aden-photo {
+        width: 50%;
+    }
 }
